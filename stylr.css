@@ -1,0 +1,166 @@
+
+
+.main-tamplet{
+    max-width: 1300px;
+    margin: 20px auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* heder menu  */
+.heder-menu{
+    text-align: center;
+
+}
+.heder-menu ul {
+    list-style: none;
+    display: inline-block;
+}
+.heder-menu ul li {
+    display: inline-block;
+    margin: 0px 4px;
+}
+.heder-menu ul li a {
+    text-decoration: none;
+    background: #48dbfb;
+    padding: 8px 10px;
+    color: #000;
+    position: relative;
+    transition: .5s;
+}
+.heder-menu ul li a:hover{
+    background: #fff;
+    color: #48dbfb;
+}
+.heder-menu ul li a::before {
+    content: '';
+    background: rgb(2, 2, 2);
+    color: #48dbfb;
+    position: absolute;
+    bottom: 7px;
+    left: 8px;
+    width: 0;
+    height: 2px;
+    transition: .5s;
+}
+.heder-menu ul li a:hover:before{
+    width: 80%;
+}
+/* time planer  */
+.plener{
+    background: #48dbfb;
+}
+.plener .play a{
+    background: #fff;
+    display: inline-block;
+    color: #dddddd;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    transition: 3s;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    z-index: 1;
+}
+.plener .play a::before{
+    content: '';
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.plener .play a:hover:before{
+    width: 100%;
+}
+/* image aria  */
+.img-aria{
+    background: #f7f9f9;
+}
+.img1 {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.img0{
+    width: 300px;
+    height: 240px;
+    overflow: hidden;
+    margin: 10px 7px;
+}
+img {
+    
+    width: 100%;
+    transition: .5s;
+    
+}
+.hover1:hover{
+    transform: rotate(360deg);
+}
+.hover2:hover{
+    transform: rotate(30deg) scaleY(1.1);
+}
+.hover3:hover{
+    transform: rotate(-30deg) scaleY(1.1);
+}
+.hover4:hover{
+    transform: rotate(-30deg) scaleY(1.1);
+}
+.hover5:hover{
+    transform: rotate(30deg) scaleY(1.1);
+}
+.hover6:hover{
+    transform: rotate(360deg);
+}
+.hover7:hover{
+    transform: scale(1.4);
+}
+.hover8:hover{
+    transform: scale(1.4,1.4);
+}
+/* end-aria */
+.end-aria p {
+    color: #918297;
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+}
+.step p {
+    display: inline-block;
+    width: 60px;
+    background: #000;
+    color: #fff;
+    padding: 7px;
+    margin: 0 145px;
+    transition: .5s;
+}
+p#sp1 {
+    position: relative;
+    transform: rotate(-59deg);
+}
+
+p#sp1:hover{
+    transform: rotate(0deg);
+    color: #000;
+    background: #48dbfb;
+}
+p#sp2:hover{
+    transform: rotate(0deg);
+    color: #000;
+    background: #48dbfb;
+}
+p#sp3 {
+    position: relative;
+    transform: rotate(59deg);
+}
+p#sp3:hover{
+    transform: rotate(0deg);
+    color: #000;
+    background: #48dbfb;
+}
